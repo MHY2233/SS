@@ -13,11 +13,13 @@ tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 ## 二、配置文件
 
 ```bash
-mkdir -p /etc/shadowsocks
+# 创建目录
+mkdir /etc/shadowsocks
 
+# 创建配置文件
 vi /etc/shadowsocks/config.json
 
-写入以下配置
+写入以下内容
 {
     "server": "0.0.0.0",
     "server_port": 8388,
@@ -33,6 +35,7 @@ vi /etc/shadowsocks/config.json
 ## 三、使用 systemd 守护进程
 
 ```bash
+# 创建service文件
 vi /etc/systemd/system/shadowsocks.service
 
 写入以下内容
@@ -53,13 +56,20 @@ WantedBy=multi-user.target
 ## 四、配置ss开机自启动
 
 ```bash
-systemctl daemon-reload  #Systemctl重载
 
-systemctl start shadowsocks  #启动
+# 重新加载service文件
+systemctl daemon-reload 
 
-systemctl restart shadowsocks 重启
-systemctl enable shadowsocks #添加开机自启动
+# 开启shadowsocks 
+systemctl start shadowsocks 
 
-systemctl status shadowsocks #查看状态
+# 重启shadowsocks
+systemctl restart shadowsocks
+
+# 设置shadowsocks开机自启
+systemctl enable shadowsocks 
+
+# 查看shadowsocks运行状态
+systemctl status shadowsocks 
 
 ```
