@@ -3,8 +3,10 @@
 ##  一、下载并解压
 
 ```bash
+
 # 下载
 wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.16.1/shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz
+
 
 # 解压
 tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
@@ -13,13 +15,14 @@ tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 ## 二、配置文件
 
 ```bash
+
 # 创建目录
 mkdir /etc/shadowsocks
 
 # 创建配置文件
 vi /etc/shadowsocks/config.json
 
-写入以下内容
+# 写入以下内容
 {
     "server": "0.0.0.0",
     "server_port": 8388,
