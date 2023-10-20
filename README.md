@@ -4,6 +4,7 @@
 
 ```bash
 wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.16.1/shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz
+
 tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 ```
 
@@ -11,6 +12,7 @@ tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 
 ```bash
 mkdir -p /etc/shadowsocks
+
 vi /etc/shadowsocks/config.json
 
 写入以下配置
