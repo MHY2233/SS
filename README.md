@@ -10,31 +10,11 @@ wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.16.1/s
 tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 ```
 
-## 二、配置文件
+## 二、下载配置文件
     mkdir/etc/shadowsocks.service && curl -Lo /etc/shadowsocks/config.json https://raw.githubusercontent.com/MHY2233/shadowsocks-install/main/config.json
 
-```bash
-
-# 创建目录
-mkdir /etc/shadowsocks
-
-# 创建配置文件
-vi /etc/shadowsocks/config.json
-
-# 写入以下内容
-{
-    "server": "0.0.0.0",
-    "server_port": 8388,
-    "local_address": "127.0.0.1",
-    "local_port": 1080,
-    "mode":"tcp_and_udp",
-    "password": "TheBeautifulPassword",
-    "timeout": 300,
-    "method": "chacha20-ietf-poly1305"
-}
-```
-
 ## 三、使用 systemd 守护进程
+curl -Lo /etc/systemd/system/shadowsocks.service https://raw.githubusercontent.com/MHY2233/shadowsocks-install/main/shadowsocks.service && systemctl daemon-reload
 
 ```bash
 # 创建service文件
