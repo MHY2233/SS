@@ -12,26 +12,6 @@ tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 
 ## 二、配置文件
     mkdir/etc/shadowsocks.service && curl -Lo /etc/shadowsocks/config.json https://raw.githubusercontent.com/MHY2233/shadowsocks-install/main/config.json
-Description=Shadowsocks Server
-After=network.target
-
-[Service]
-ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json
-
-Restart=on-abort
-
-[Install]
-WantedBy=multi-user.target
-Description=Shadowsocks Server
-After=network.target
-
-[Service]
-ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json
-
-Restart=on-abort
-
-[Install]
-WantedBy=multi-user.target
 
 ```bash
 
