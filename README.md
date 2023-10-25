@@ -1,5 +1,3 @@
-# ShadowSocks-Rust-install
-
 ##  一、下载并解压
 
 ```bash
