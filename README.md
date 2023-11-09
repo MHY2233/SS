@@ -3,7 +3,7 @@
 ```bash
 
 # 下载
-wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.16.1/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
+wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
 
 
 # 解压
