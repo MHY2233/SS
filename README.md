@@ -3,11 +3,11 @@
 ```bash
 
 # 下载
-wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.16.1/shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz
+wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.16.1/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
 
 
 # 解压
-tar -xf  shadowsocks-v1.16.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
+tar -xf  shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 ```
 
 ### 2.下载shadowsocks配置文件
