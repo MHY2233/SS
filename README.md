@@ -1,14 +1,11 @@
 ### 1.下载shadowsocks 程序
 
-```bash
-
 # 下载
-wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
+    wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
 
 
 # 解压
-tar -xf shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
-```
+    tar -xf shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 
 ### 2.下载shadowsocks配置文件
     mkdir /etc/shadowsocks && curl -Lo /etc/shadowsocks/config.json https://raw.githubusercontent.com/MHY2233/shadowsocks-install/main/config.json
