@@ -7,6 +7,7 @@
 
 ### 2.创建配置文件
     mkdir /etc/shadowsocks
+
     vim /etc/shadowsocks/config.json
 
 ### 3.下载systemctl文件
