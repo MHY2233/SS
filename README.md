@@ -1,6 +1,6 @@
 ### 1.下载shadowsocks 程序
 
-### 下载压缩包
+### 下载
     wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
 
 
