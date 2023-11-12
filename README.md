@@ -10,6 +10,8 @@
 
     vim /etc/shadowsocks/config.json
 
+
+#### 写入下面配置内容。
     {
         "server": "0.0.0.0",
         "server_port": 443,
