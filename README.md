@@ -10,6 +10,16 @@
 
     vim /etc/shadowsocks/config.json
 
+    {
+        "server": "0.0.0.0",
+        "server_port": 443,
+        "local_address": "127.0.0.1",
+        "local_port": 1080,
+        "mode":"tcp_and_udp",
+        "password": "TheBeautifulPassword",
+        "timeout": 300,
+        "method": "chacha20-ietf-poly1305"
+    }
 ### 3.下载systemctl文件
     curl -Lo /etc/systemd/system/shadowsocks.service https://raw.githubusercontent.com/MHY2233/shadowsocks-install/main/shadowsocks.service && systemctl daemon-reload
 
