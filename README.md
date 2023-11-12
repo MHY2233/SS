@@ -5,7 +5,7 @@
 ### 2.解压程序压缩包
     tar -xf shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 
-### 2.创建配置文件
+### 3.创建配置文件
     mkdir /etc/shadowsocks
 
     vim /etc/shadowsocks/config.json
@@ -22,8 +22,12 @@
         "timeout": 300,
         "method": "chacha20-ietf-poly1305"
     }
-### 3.下载systemctl文件
-    curl -Lo /etc/systemd/system/shadowsocks.service https://raw.githubusercontent.com/MHY2233/shadowsocks-install/main/shadowsocks.service && systemctl daemon-reload
+### 4.配置systemctl 文件
+    vim /etc/systemd/system/shadowsocks.service
+
+
+#### 写入下面配置内容
+
 
 ### 4.配置ss开机自启动
 
