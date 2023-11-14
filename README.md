@@ -1,4 +1,4 @@
-<center><font face="微软雅黑" color=gray size=gray>**shadowsocks安装**</font></center>
+<center><font face="微软雅黑" color=gray size=gray># shadowsocks安装</font></center>
 
 ### 1.下载程序压缩包
     wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
