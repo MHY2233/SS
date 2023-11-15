@@ -12,8 +12,7 @@
 
 
 #### 写入下面配置内容
-```bash
-{
+    {
     "server": "0.0.0.0",
     "server_port": 8338,
     "local_address": "127.0.0.1",
@@ -22,8 +21,7 @@
     "password": "TheBeautifulPassword",
     "timeout": 300,
     "method": "chacha20-ietf-poly1305"
-}
-```
+    }
 ### 4.配置systemctl 文件
     vim /etc/systemd/system/shadowsocks.service
 
