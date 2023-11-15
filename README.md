@@ -30,18 +30,19 @@
 
 
 #### 写入下面配置内容
-    [Unit]
-    Description=Shadowsocks Server
-    After=network.target
+```bash
+[Unit]
+Description=Shadowsocks Server
+After=network.target
 
-    [Service]
-    ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json
+[Service]
+ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json
 
-    Restart=on-abort
+Restart=on-abort
 
-    [Install]
-    WantedBy=multi-user.target
-
+[Install]
+WantedBy=multi-user.target
+```
 ### 5.程序启动设置
 
 ```bash
