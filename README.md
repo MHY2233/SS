@@ -1,5 +1,5 @@
 ### 1.下载程序压缩包
-> wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
+    wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
 
 
 ### 2.解压程序压缩包
