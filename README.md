@@ -1,9 +1,9 @@
 ### 1.下载程序压缩包
-    wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.0/shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz
+    wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.1/shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz
 
 
 ### 2.解压程序压缩包
-    tar -xf shadowsocks-v1.17.0.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
+    tar -xf shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
 
 ### 3.创建配置文件
     mkdir /etc/shadowsocks
@@ -19,7 +19,7 @@
     "local_address": "127.0.0.1",
     "local_port": 1080,
     "mode": "tcp_and_udp",
-    "password": "TheBeautifulPassword",
+    "password": "YourPassword",
     "timeout": 300,
     "method": "chacha20-ietf-poly1305"
 }
