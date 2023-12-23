@@ -4,7 +4,7 @@
     "local_address": "127.0.0.1",
     "local_port": 1080,
     "mode":"tcp_and_udp",
-    "password": "TheBeautifulPassword",
+    "password": "eNlo@1g@%6gq7H9Y",
     "timeout": 300,
     "method": "chacha20-ietf-poly1305"
 }
