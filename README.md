@@ -18,7 +18,7 @@
 
         systemctl restart shadowsocks 
 
-- **查看 shadowsocks 运行状态**
+- **查看运行状态**
 
         systemctl status shadowsocks 
 
