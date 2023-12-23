@@ -1,64 +1,35 @@
-### 1.下载程序压缩包
-    wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.1/shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz
+- **安装 shadowsocks 程序**
 
+        wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.1/shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz && tar -xf shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/ && chmod +x /usr/local/bin/ssserver && rm shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz
 
-### 2.解压程序压缩包
-    tar -xf shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/
+- **下载配置文件**
 
-### 3.创建配置文件
-    mkdir /etc/shadowsocks
+        mkdir/etc/shadowsocks/ curl -Lo /etc/shadowsocks/config.json https://raw.githubusercontent.com/MHY2233/SS/main/config.json
 
-    vim /etc/shadowsocks/config.json
+- **下载 service 文件**
 
+        curl -Lo /etc/systemd/system/shadowsocks.service https://raw.githubusercontent.com/MHY2233/SS/main/shadowsocks.service && systemctl daemon-reload
 
-#### 写入下面配置内容
-```bash
-{
-    "server": "0.0.0.0",
-    "server_port": 8338,
-    "local_address": "127.0.0.1",
-    "local_port": 1080,
-    "mode": "tcp_and_udp",
-    "password": "YourPassword",
-    "timeout": 300,
-    "method": "chacha20-ietf-poly1305"
-}
-```
-### 4.配置systemctl 文件
-    vim /etc/systemd/system/shadowsocks.service
+- **启动 shadowsocks**
 
+        systemctl enable -- now shadowsocks
 
-#### 写入下面配置内容
-```bash
-[Unit]
-Description=Shadowsocks Server
-After=network.target
+- **重启 shadowsocks **
 
-[Service]
-ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json
+        systemctl restart shadowsocks 
 
-Restart=on-abort
+- **查看 shadowsocks 运行状态**
 
-[Install]
-WantedBy=multi-user.target
-```
-### 5.程序启动设置
+        systemctl status shadowsocks 
 
-```bash
+- **查看日志**
 
-# 重新加载service文件
-systemctl daemon-reload 
+        journalctl -u shadowsocks -o cat -e
 
-# 开启shadowsocks 
-systemctl start shadowsocks 
+- **查看实时日志**
 
-# 重启shadowsocks
-systemctl restart shadowsocks
+        journalctl -u shadowsocks -o cat -f
 
-# 设置shadowsocks开机自启
-systemctl enable shadowsocks 
+- **卸载 shadowsocks**
 
-# 查看shadowsocks运行状态
-systemctl status shadowsocks 
-
-```
+        systemctl disable -- now shadowsocks && rm -rf /usr/local/bin/ssserver /etc/shadowsocks /etc/systemd/system/shadowsocks.service
