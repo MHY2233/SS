@@ -1,4 +1,4 @@
-- **安装 shadowsocks 程序**
+- **安装程序**
 
         wget https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.17.1/shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz && tar -xf shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz -C /usr/local/bin/ && chmod +x /usr/local/bin/ssserver && rm shadowsocks-v1.17.1.x86_64-unknown-linux-gnu.tar.xz
 
