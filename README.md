@@ -12,7 +12,7 @@
 
 - **启动 shadowsocks**
 
-        systemctl enable -- now shadowsocks
+        systemctl enable --now shadowsocks
 
 - **重启 shadowsocks**
 
@@ -32,4 +32,4 @@
 
 - **卸载 shadowsocks**
 
-        systemctl disable -- now shadowsocks && rm -rf /usr/local/bin/ssserver /etc/shadowsocks /etc/systemd/system/shadowsocks.service
+        systemctl disable --now shadowsocks && rm -rf /usr/local/bin/ssserver /etc/shadowsocks /etc/systemd/system/shadowsocks.service
