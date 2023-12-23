@@ -14,7 +14,7 @@
 
         systemctl enable -- now shadowsocks
 
-- **重启 shadowsocks **
+- **重启 shadowsocks**
 
         systemctl restart shadowsocks 
 
