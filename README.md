@@ -4,7 +4,7 @@
 
 - **下载配置文件**
 
-        mkdir/etc/shadowsocks/ curl -Lo /etc/shadowsocks/config.json https://raw.githubusercontent.com/MHY2233/SS/main/config.json
+        mkdir /etc/shadowsocks/ curl -Lo /etc/shadowsocks/config.json https://raw.githubusercontent.com/MHY2233/SS/main/config.json
 
 - **下载 service 文件**
 
