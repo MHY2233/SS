@@ -1,4 +1,4 @@
-[**查看ShadowSocks 最新发行版**](https://github.com/shadowsocks/shadowsocks-rust/releases)
+# [**ShadowSocks 发行版**](https://github.com/shadowsocks/shadowsocks-rust/releases)
 
 - **安装程序**
 
